@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+    <!-- <link rel="stylesheet" href="assets/css/Login.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|PT+Serif&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|PT+Serif|Shadows+Into+Light&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|PT+Serif|Satisfy|Shadows+Into+Light&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="homepage/menu.css" />
+</head>
+
+<body>
+    <nav class="menu" tabindex="0">
+        <div class="smartphone-menu-trigger"></div>
+        <header class="avatar">
+            <img src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg" />
+            <h2>John D.</h2>
+        </header>
+        <ul>
+            <li tabindex="0" class="icon-dashboard"><span>List Note</span></li>
+            <li tabindex="0" class="icon-customers"><span>Customers</span></li>
+            <li tabindex="0" class="icon-users"><span>Users</span></li>
+            <li tabindex="0" class="icon-settings"><span>Settings</span></li>
+            <li tabindex="0" class="icon-settings"><span>logout</span></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <!-- show note theo danh sách -->
+                    <!-- Cards-->
+                    <div class="card card--big">
+                        <div class="card__image" style="background-image: url(https://placeimg.com/640/480/nature);"></div>
+                        <h2 class="card__title">Title note</h2>
+                        <span class="card__subtitle">By Mattia Astorino</span>
+                        <p class="card__text">
+                            content....
+                        </p>
+                        <div class="card__action-bar">
+                            <button class="btn  btn-info card__button">Detail</button>
+                            <button class="btn btn-info card__button">Del</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- right content -->
+                <div class="col-md-6">
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <div data-toggle="tooltip" data-placement="left" id="back-to-top" class="back-to-top">
+        <!--button trở về đầu trang-->
+
+        <button class="btn material-icons">keyboard_arrow_up</button>
+    </div>
+    <!-- </div> -->
+
+    <!-- <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-firestore.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/3.6.4/firestore.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-storage.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyD17r7mphJ8Vh_rXYHG8WAHgnTfCa2RgaE",
+            authDomain: "t-notelist.firebaseapp.com",
+            databaseURL: "https://t-notelist.firebaseio.com",
+            projectId: "t-notelist",
+            storageBucket: "t-notelist.appspot.com",
+            messagingSenderId: "135435269388",
+            appId: "1:135435269388:web:768027188dd226fd79c529"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+    </script>
+    <script src="/app.js"></script>
+    <script src="/db.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
